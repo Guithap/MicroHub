@@ -1,3 +1,5 @@
+netlify deploy --build --prod
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
