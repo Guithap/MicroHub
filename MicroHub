@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroHub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #1a1a1a, #333333, #4d4d4d); /* Gradiente dinâmico */
+            background-size: 400% 400%; /* Para animação de fundo */
+            animation: gradientBg 10s ease infinite; /* Fundo animado */
+            color: #f0f0f0; /* Texto claro */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes gradientBg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px 0;
+            background: linear-gradient(to bottom, #800000, #ffa07a); /* Degradê de carmim */
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            border: 4px solid white; /* Borda branca ao redor do texto */
+            padding: 10px; /* Espaço interno */
+            border-radius: 10px; /* Suaviza bordas */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Efeito de brilho */
+        }
+
+        .buttons {
+            margin-top: 100px; /* Posiciona os botões abaixo do título */
+            display: flex;
+            flex-direction: column; /* Organiza botões em coluna */
+            align-items: center; /* Centraliza botões */
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px; /* Tamanho uniforme */
+            height: 60px; /* Altura ajustada */
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 10px 0; /* Espaçamento reduzido entre botões */
+            border: 2px solid; /* Borda combinando com o degradê */
+            border-radius: 12px; /* Bordas arredondadas */
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s; /* Suavidade nas transições */
+            color: white; /* Texto branco */
+            padding: 0 20px; /* Espaço interno */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+        }
+
+        button:hover {
+            transform: scale(1.05); /* Efeito de hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Intensifica sombra ao passar o mouse */
+        }
+
+        button:active {
+            animation: clickEffect 0.2s ease forwards; /* Animação ao clicar */
+        }
+
+        @keyframes clickEffect {
+            0% {
+                transform: scale(1); /* Tamanho inicial */
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+            }
+            50% {
+                transform: scale(0.9); /* Reduz levemente o botão */
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Suaviza a sombra */
+            }
+            100% {
+                transform: scale(1); /* Retorna ao tamanho original */
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Restaura a sombra */
+            }
+        }
+
+        /* Botão DISCORD */
+        .discord {
+            background: linear-gradient(to bottom, #0000ff, #87cefa); /* Degradê azul */
+            border-color: #0000ff; /* Cor borda azul */
+        }
+
+        /* Botão YOUTUBE */
+        .youtube {
+            background: linear-gradient(to bottom, #ff0000, #ffa07a); /* Degradê vermelho */
+            border-color: #ff0000; /* Cor borda vermelha */
+        }
+
+        /* Botão INSTAGRAM */
+        .instagram {
+            background: linear-gradient(to bottom, #ff69b4, #ffc0cb); /* Degradê rosa */
+            border-color: #ff69b4; /* Cor borda rosa */
+        }
+
+        button img {
+            width: 36px; /* Ícone maior */
+            height: 36px;
+            background-color: white; /* Fundo branco ao redor dos ícones */
+            padding: 6px; /* Espaço interno */
+            border-radius: 12px; /* Bordas arredondadas suaves */
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Efeito de brilho */
+        }
+    </style>
+</head>
+<body>
+    <h1>MicroHub</h1>
+    <div class="buttons">
+        <button class="discord" onclick="window.location.href='https://discord.gg/STzntFqzan';">
+            DISCORD <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Logo">
+        </button>
+        <button class="youtube" onclick="window.location.href='https://youtube.com/@microfox_br?si=I2VfBKekti7O48T5';">
+            YOUTUBE <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube Logo">
+        </button>
+        <button class="instagram" onclick="window.location.href='https://www.instagram.com/microfox_br?igsh=dTR5ODQ3NWRhNDds';">
+            INSTAGRAM <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram Logo">
+        </button>
+    </div>
+</body>
+</html>
